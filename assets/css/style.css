@@ -4,3 +4,14 @@ table{
 thead{
   text-align: left;
 }
+#tableHeader{
+  font-weight: bold;
+}
+
+.jumbotron{
+  background: url(../images/train.jpg) no-repeat ;
+  color: #FFF;
+}
+.form-horizontal .control-label{
+  margin-bottom: .5em;
+}
