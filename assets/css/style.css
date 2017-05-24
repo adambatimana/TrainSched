@@ -18,3 +18,6 @@ thead{
 .btn-danger, .btn-primary{
   padding: 1px 2px;
 }
+#signinDiv{
+  text-align: right;
+}
