@@ -134,8 +134,6 @@ function onSignIn(googleUser) {
        var id_token = googleUser.getAuthResponse().id_token;
        console.log("ID Token: " + id_token);
 
-       getBasicProfile();
-       console.log(profile);
      };
 
 
@@ -165,6 +163,9 @@ $(".signOut").on("click", signOut);
 
 $('.g-signin2').on("click", "#signIn", function(e){
    onSignIn();
+   getBasicProfile();
+   console.log(profile);
+
 });
 
 
