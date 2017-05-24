@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lan="en">
+<!-- client id -->
+<!-- 171536910-ncc56hpidbfcp1dsjat9e7238k64tq34.apps.googleusercontent.com -->
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="171536910-ncc56hpidbfcp1dsjat9e7238k64tq34.apps.googleusercontent.com">
   <title>Catch Me If You Can</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -11,10 +15,21 @@
   <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
   <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
   <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+
+
+        <div class="g-signin2 btn btn-primary" data-onsuccess="onSignIn">Sign-In</div>
+      </div>
+      <div class="col-md-6">
+        <a href="#" id="signOut">Sign out</a>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-md-12">
@@ -27,7 +42,7 @@
 
     <div class="row">
       <div class="col-md-12">
-        <table class="table table-striped table-hover" id = "trainTable">
+        <table class="table table-striped table-hover" id="trainTable">
           <thead>
             <tr class="success">
               <td>Current Train Schedule</td>
@@ -41,13 +56,13 @@
           </thead>
           <tbody>
 
-            <tr id = "table">
+            <tr id="table">
               <td>Train Name</td>
               <td>Destination</td>
               <td>Frequency (Min)</td>
               <td>Next Arrival</td>
               <td>Minutes Away</td>
-              <td><button class = 'btn btn-primary' id = 'upDate'> UPDATE</button></td>
+              <td><button class='btn btn-primary' id='upDate'> UPDATE</button></td>
               <td></td>
             </tr>
 
@@ -97,7 +112,7 @@
 
                 <div class="form-group">
                   <div class="col-lg-10 col-lg-offset-2">
-                    <button type="submit" class="btn btn-warning" id= "addTrain">Submit</button>
+                    <button type="submit" class="btn btn-warning" id="addTrain">Submit</button>
                     <button type="reset" class="btn btn-default">Clear</button>
                   </div>
                 </div>
@@ -112,7 +127,10 @@
     </div>
 
   </div>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   <script src="assets/js/app.js"></script>
+
 </body>
 
 </html>
