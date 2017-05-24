@@ -19,14 +19,6 @@ thead{
   padding: 1px 2px;
 }
 #siginDiv{
-  /*float: right;*/
-  margin-bottom: 1em;
-}
-.g-signin2{
-  /*margin: 1em;*/
-  text-align: right;
-}
-.signOut{
-  /*margin: 1em;*/
-  text-align: right;
+  float: right;
+  margin: 1em 0;
 }
