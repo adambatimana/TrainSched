@@ -80,7 +80,6 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 //                    MOMENT.JS
 // =======================================================================
 
-
   var tFrequency = frequency;
 
   // Time is 3:30 AM
@@ -112,19 +111,24 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
 
   // Add each train's data into the table
-    $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + moment(nextTrain).format("hh:mm") + "</td><td>" + tMinutesTillTrain + "</td></tr>");
 
+    $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + moment(nextTrain).format("hh:mm") + "</td><td>" + tMinutesTillTrain + "</td><td>" + "<button class ='delete btn btn-danger'>Remove </button> " + "</td></tr>");
 
 });
-
 
 
   // =======================================================================
   //                   FUNCTIONS
   // =======================================================================
 
+// remove row with button in it
+$('table').on('click', 'button', function(e){
+   $(this).closest('tr').remove();
+});
 
-
+$('table').on("click", "#upDate", function(e){
+   location.reload();
+});
 
 
 
