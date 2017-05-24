@@ -159,7 +159,7 @@ $('table').on("click", "#upDate", function(e){
 });
 
 $(".signOut").on("click", "button", function(e){
-   signOut();
+   GoogleAuth.signOut();
 });
 
 $('.g-signin2').on("click", "#signIn", function(e){
