@@ -133,11 +133,14 @@ function onSignIn(googleUser) {
        // The ID token you need to pass to your backend:
        var id_token = googleUser.getAuthResponse().id_token;
        console.log("ID Token: " + id_token);
+
+       getBasicProfile();
+       console.log(profile);
      };
 
 
 
-function signOut() {
+function signOut(){
          var auth2 = gapi.auth2.getAuthInstance();
          auth2.signOut().then(function () {
            console.log('User signed out.');
@@ -158,9 +161,7 @@ $('table').on("click", "#upDate", function(e){
    location.reload();
 });
 
-$(".signOut").on("click", "button", function(e){
-   GoogleAuth.signOut();
-});
+$(".signOut").on("click", signOut);
 
 $('.g-signin2').on("click", "#signIn", function(e){
    onSignIn();
