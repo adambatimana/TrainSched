@@ -135,7 +135,7 @@ window.onload = function() {
 
     var xhr = new XMLHttpRequest();
 
-    xhr.open('POST', 'https://yourbackend.example.com/tokensignin');
+    xhr.open('POST', 'https://adambatimana.github.io/TrainSched');
 
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
@@ -160,7 +160,7 @@ window.onload = function() {
 
       gapi.load('auth2', function() {
         auth2 = gapi.auth2.init({
-          client_id: 'CLIENT_ID.apps.googleusercontent.com',
+          client_id: '171536910-ncc56hpidbfcp1dsjat9e7238k64tq34.apps.googleusercontent.com',
           fetch_basic_profile: false,
           scope: 'profile'
         });
