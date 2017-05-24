@@ -158,7 +158,7 @@ $('table').on("click", "#upDate", function(e){
    location.reload();
 });
 
-$('a').on("click", ".signOut", function(e){
+$(".signOut").on("click", "button", function(e){
    signOut();
 });
 
