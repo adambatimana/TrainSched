@@ -181,7 +181,7 @@ function onFailure(error) {
      }
 
 function renderButton() {
-       gapi.signin2.render('g-signin2', {
+       gapi.signin2.render('my-signin2', {
          'scope': 'profile email',
          'width': 240,
          'height': 50,
@@ -201,7 +201,7 @@ function signOut() {
 
 
   // =======================================================================
-  //                   FUNCTIONS
+  //                 ONCLICK  FUNCTIONS
   // =======================================================================
 
   // remove row with button in it
