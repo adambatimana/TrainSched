@@ -21,10 +21,10 @@ thead{
 #siginDiv{
   margin: 1em 0;
   text-align: right;
-  
+
 }
 .g-signin2{
-  margin: 1em ;
+  margin: 0 1em ;
   display: inline-block;
 }
 .signOut{
