@@ -24,6 +24,7 @@ thead{
 
 }
 .g-signin2{
+  padding: 1em;
   display: inline-block;
 }
 .signOut{
